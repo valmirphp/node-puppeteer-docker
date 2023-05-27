@@ -1,0 +1,20 @@
+version: "3"
+
+services:
+  basic:
+    image: valmirphp/node-puppeteer:latest
+    tty: true
+    entrypoint: ["/bin/bash", "-c", "/home/pptruser/app/entrypoint.sh"]
+    user: "root"
+    command:
+      - node run.js
+    volumes:
+      - ./basic:/home/pptruser/app
+
+  wwchat:
+    build:
+      context: ./wwchat
+      dockerfile: Dockerfile
+    tty: true
+
+

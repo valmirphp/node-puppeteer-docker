@@ -1,0 +1,6 @@
+# Solicite ao DevOps alteração destes arquivos
+# você pode editar via PULL Request e marcar o responsavel)
+
+.github/ @valmirphp
+Dockerfile @valmirphp
+.dockerignore @valmirphp
